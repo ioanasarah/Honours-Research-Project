@@ -1,4 +1,6 @@
-# Honours-Research-Project
+# Honours Research Project: Modelling paracetamol toxicity
+The basis of my Honour’s Research Project lies in constraint-based metabolic modelling, in which an algorithm maps gene expression data onto the Human1 Genome Scale Model to identify the most “optimal” pathway via a penalty minimisation calculation. This in silico modelling approach allows for the effects of medications to be modelled, providing a deeper understanding of their metabolic  and toxicity pathways without causing harm to humans or animals. This project has focused on mapping the pathways of paracetamol degradation and metabolic reactions affected by paracetamol toxicity.
+
 ## Explanation of folder contents
 
 - [`escher_maps/`](./escher_maps)  
@@ -23,3 +25,11 @@ Combines expression values for a specific reaction across multiple samples and t
 
 - [`creating_csv_for_escher.py`](./code/creating_csv_for_escher.py)  
 Converts excel based expression data into a simplified .CSV format compatible with Escher for mapping of pathways. 
+
+## Main files for running algorithm 
+- [`preprocessing.py`](./algorithm/Main_files/preprocessing.py)  
+Carries out preprocessing of the data in preparation for [route_optimization.py](./algorithm/Main_files/route_optimization.py) which maps the gene expression data onto the GEM. 
+This file sets the model, transcriptomic dataset, method for processing, and location of the storage of results for each run. 
+
+- [`route_optimization.py`](./algorithm/Main_files/route_optimization.py)  
+This file takes the preprocessed files from the combination folder created by [preprocessing.py](./algorithm/Main_files/preprocessing.py), and maps the gene expression dataset onto the reactions in the model and predicts the optimal pathway which can be taken for the tasks in the tasklist file. 
