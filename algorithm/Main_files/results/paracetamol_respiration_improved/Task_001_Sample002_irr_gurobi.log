@@ -1,0 +1,68 @@
+
+Gurobi 12.0.2 (win64) logging started Tue Nov 25 16:44:42 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\paracetamol_respiration_improved\Task_001_Sample002_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34506 columns and 146716 nonzeros
+Model fingerprint: 0x476587e7
+Variable types: 17257 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30838 rows and 21548 columns
+Presolve time: 0.51s
+Presolved: 16398 rows, 12958 columns, 54580 nonzeros
+Variable types: 6415 continuous, 6543 integer (6543 binary)
+
+Root relaxation: objective 3.239298e-02, 3182 iterations, 0.20 seconds (0.40 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03239    0   42          -    0.03239      -     -    0s
+H    0     0                       2.4712744    0.03239  98.7%     -    0s
+     0     0    0.88994    0   56    2.47127    0.88994  64.0%     -    1s
+     0     0    0.91554    0   63    2.47127    0.91554  63.0%     -    1s
+     0     0    0.91554    0   67    2.47127    0.91554  63.0%     -    1s
+     0     0    1.79025    0   86    2.47127    1.79025  27.6%     -    1s
+     0     0    1.91334    0   86    2.47127    1.91334  22.6%     -    1s
+     0     0    1.91399    0   87    2.47127    1.91399  22.6%     -    1s
+     0     0    1.97640    0   94    2.47127    1.97640  20.0%     -    2s
+     0     0    1.97656    0   97    2.47127    1.97656  20.0%     -    2s
+     0     2    1.97656    0   97    2.47127    1.97656  20.0%     -    2s
+   971   540    2.35778   37   23    2.47127    2.32962  5.73%  19.4    5s
+H 1106   590                       2.4712744    2.32965  5.73%  18.3    5s
+H 1140   604                       2.4712743    2.32965  5.73%  18.3    5s
+  2856  1564    2.46004   59   19    2.47127    2.34203  5.23%  14.4   10s
+  5483  2875    2.43608   50   21    2.47127    2.35021  4.90%  11.5   15s
+  6116  3025    2.45273   58  113    2.47127    2.35490  4.71%  11.4   20s
+  6136  3040    2.36202   43  100    2.47127    2.35490  4.71%  13.2   25s
+  7387  2736     cutoff   66         2.47127    2.45247  0.76%  14.4   30s
+
+Cutting planes:
+  Gomory: 6
+  Lift-and-project: 13
+  Cover: 36
+  Implied bound: 8
+  MIR: 26
+  Flow cover: 108
+  Flow path: 3
+  Inf proof: 2
+  Network: 42
+
+Explored 8017 nodes (118194 simplex iterations) in 31.35 seconds (23.95 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 2.47127 2.47127 2.47127 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.471274330078e+00, best bound 2.471274329847e+00, gap 0.0000%

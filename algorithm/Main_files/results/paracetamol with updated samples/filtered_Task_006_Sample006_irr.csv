@@ -1,0 +1,25 @@
+﻿Flux,Expression,ID,Name,Formula,Converted_formula,Objective_penalty,Options,Option_values
+1,31.40928973,MAR12470,uptake of acetaminophen by the hepatocytes,MAM01371c + MAM02040c + MAM03402e --> MAM01285c + MAM02039c + MAM02751c + MAM03402c,ATP[c] + H2O[c] + acetaminophen/paracetamol[e] --> ADP[c] + H+[c] + Pi[c] + acetaminophen/paracetamol[c],0.031837715,Termination condition,optimal
+1,1.14,MAR12926_f,ACMPitr,MAM03402c --> MAM03402r,acetaminophen/paracetamol[c] --> acetaminophen/paracetamol[r],0.877192982,Root work units,0.68
+1,47.20188841,MAR13001,NAPQIhr,MAM02039r + MAM02555r + MAM02630r + MAM03402r --> 2.0 MAM02040r + MAM02554r + MAM03779r,H+[r] + NADPH[r] + O2[r] + acetaminophen/paracetamol[r] --> 2.0 H2O[r] + NADP+[r] + NAPQI[r],0.021185593,Optimization,1.15
+1,105.1439167,MAR30000,Detoxification of NAPQI using GSH,MAM02026r + MAM03779r --> MAM10000c,GSH[r] + NAPQI[r] --> Acetaminophen-glutathione[c],0.009510774,Time,2.083821535
+1,83.12614139,MAR30002,APAP-GSH to APAP-Mer,MAM10000c + MAM10001c --> MAM02026c + MAM03759c,Acetaminophen-glutathione[c] + Mercapturic acid[c] --> GSH[c] + acetaminophen-mercapturate-conjugate/N-acetyl-cysteine-acetaminophen[c],0.01202991,Objective,0.951756974
+1,-1,temporary_exchange_MAM02039r_f,temporary_exchange_MAM02039r_f, --> MAM02039r, --> H+[r],0,,
+0,-1,temporary_exchange_MAM02039r_r,temporary_exchange_MAM02039r_r,MAM02039r --> ,H+[r] --> ,0,,
+1,-1,temporary_exchange_MAM03402e,temporary_exchange_MAM03402e, --> MAM03402e, --> acetaminophen/paracetamol[e],0,,
+1,-1,temporary_exchange_MAM01371c,temporary_exchange_MAM01371c, --> MAM01371c, --> ATP[c],0,,
+1,-1,temporary_exchange_MAM02040c,temporary_exchange_MAM02040c, --> MAM02040c, --> H2O[c],0,,
+0,-1,temporary_exchange_MAM03109r,temporary_exchange_MAM03109r, --> MAM03109r, --> UDP-glucuronate[r],0,,
+1,-1,temporary_exchange_MAM02555r,temporary_exchange_MAM02555r, --> MAM02555r, --> NADPH[r],0,,
+1,-1,temporary_exchange_MAM02630r,temporary_exchange_MAM02630r, --> MAM02630r, --> O2[r],0,,
+1,-1,temporary_exchange_MAM02026r,temporary_exchange_MAM02026r, --> MAM02026r, --> GSH[r],0,,
+1,-1,temporary_exchange_MAM10001c,temporary_exchange_MAM10001c, --> MAM10001c, --> Mercapturic acid[c],0,,
+1,-1,temporary_exchange_MAM01285c,temporary_exchange_MAM01285c,MAM01285c --> ,ADP[c] --> ,0,,
+1,-1,temporary_exchange_MAM02039c,temporary_exchange_MAM02039c,MAM02039c --> ,H+[c] --> ,0,,
+1,-1,temporary_exchange_MAM02751c,temporary_exchange_MAM02751c,MAM02751c --> ,Pi[c] --> ,0,,
+0,-1,temporary_exchange_MAM03403c,temporary_exchange_MAM03403c,MAM03403c --> ,Acetaminophen glucuronide[c] --> ,0,,
+0,-1,temporary_exchange_MAM03106r,temporary_exchange_MAM03106r,MAM03106r --> ,UDP[r] --> ,0,,
+2,-1,temporary_exchange_MAM02040r,temporary_exchange_MAM02040r,MAM02040r --> ,H2O[r] --> ,0,,
+1,-1,temporary_exchange_MAM02554r,temporary_exchange_MAM02554r,MAM02554r --> ,NADP+[r] --> ,0,,
+1,-1,temporary_exchange_MAM03759c,temporary_exchange_MAM03759c,MAM03759c --> ,acetaminophen-mercapturate-conjugate/N-acetyl-cysteine-acetaminophen[c] --> ,0,,
+1,-1,temporary_exchange_MAM02026c,temporary_exchange_MAM02026c,MAM02026c --> ,GSH[c] --> ,0,,

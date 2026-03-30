@@ -1,0 +1,52 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 10:50:37 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules\Task_028_Sample004_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34811 columns and 147858 nonzeros
+Model fingerprint: 0xb0228928
+Variable types: 17417 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [3e-05, 1e+01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31251 rows and 21851 columns
+Presolve time: 0.31s
+Presolved: 16407 rows, 12960 columns, 54590 nonzeros
+Variable types: 6414 continuous, 6546 integer (6546 binary)
+
+Root relaxation: objective 1.883942e-01, 2001 iterations, 0.11 seconds (0.24 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.18839    0    5          -    0.18839      -     -    0s
+H    0     0                       1.1078002    0.18839  83.0%     -    0s
+     0     0    1.06374    0    9    1.10780    1.06374  3.98%     -    0s
+     0     0    1.07831    0    6    1.10780    1.07831  2.66%     -    1s
+     0     0    1.07831    0    9    1.10780    1.07831  2.66%     -    1s
+
+Cutting planes:
+  Cover: 5
+  Implied bound: 3
+  MIR: 16
+  Flow cover: 15
+  Inf proof: 8
+  Network: 7
+  Relax-and-lift: 3
+
+Explored 1 nodes (4029 simplex iterations) in 1.39 seconds (1.70 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 1.1078 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.107800228227e+00, best bound 1.107800228227e+00, gap 0.0000%

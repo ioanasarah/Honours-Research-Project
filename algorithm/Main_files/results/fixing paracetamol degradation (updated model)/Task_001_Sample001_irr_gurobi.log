@@ -1,0 +1,50 @@
+
+Gurobi 12.0.2 (win64) logging started Fri Oct 24 16:55:11 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\fixing paracetamol degradation (updated model)\Task_001_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47228 rows, 34504 columns and 146700 nonzeros
+Model fingerprint: 0x94cfe351
+Variable types: 17258 continuous, 17246 integer (17246 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30770 rows and 21545 columns
+Presolve time: 0.42s
+Presolved: 16458 rows, 12959 columns, 54707 nonzeros
+Variable types: 6410 continuous, 6549 integer (6549 binary)
+
+Root relaxation: objective 1.760523e-02, 3417 iterations, 0.41 seconds (0.67 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01761    0    8          -    0.01761      -     -    0s
+H    0     0                       4.4380495    0.01761   100%     -    0s
+H    0     0                       3.5909423    0.01761   100%     -    0s
+H    0     0                       1.7877326    0.01761  99.0%     -    1s
+     0     0    1.78773    0   17    1.78773    1.78773  0.00%     -    1s
+
+Cutting planes:
+  Cover: 5
+  Implied bound: 2
+  Flow cover: 3
+  RLT: 1
+  Relax-and-lift: 2
+
+Explored 1 nodes (6679 simplex iterations) in 1.90 seconds (2.05 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 1.78773 3.59094 4.43805 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.787732629597e+00, best bound 1.787732629597e+00, gap 0.0000%

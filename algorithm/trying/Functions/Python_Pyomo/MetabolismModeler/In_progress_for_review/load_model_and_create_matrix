@@ -1,0 +1,123 @@
+from cobra.io import load_json_model
+import pyarrow
+import openpyxl
+import numpy as np 
+import pandas as pd 
+import os
+import time
+from itertools import combinations
+import plotly.express as px
+
+
+
+sample_files_location = r"C:\Ioana\_uni\programming\Stuff_for_coding\Samples" # found in C:\Users\Jelle\OneDrive\Documenten\GitHub\Metabolic_Task_Score\Data\Results\Runs\Reformulated_code\consensus_2024_DCM_magnet_metabolic_tasks_2024_v1_01\run_01
+main_files_location = r"C:\Ioana\_uni\programming\Stuff_for_coding" # found in C:\Users\Jelle\OneDrive\Documenten\GitHub\Metabolic_Task_Score\Data\Main_files\For_running\combinations\consensus_2024_DCM_magnet_metabolic_tasks_2024_v1_01
+expression_file = r"NT__NT__minMax__Y__irr__reaction_expression_dataset.feather"
+model_file = r"model_consensus_2024__irreversible.json"
+
+def load_files(
+	main_files_location,
+	expression_file,
+	model_file,
+):
+	start_time = time.time()
+	expression = pd.read_feather(os.path.join(main_files_location, expression_file))
+	model_file = load_json_model(os.path.join(main_files_location, model_file))
+	larger_df  = pd.read_excel(os.path.join(main_files_location, "larger_df.xlsx"))
+	print(f'Loaded model and expression in {time.time() - start_time} seconds')
+	
+	return expression, model_file, larger_df
+
+def create_larger_excel(
+	main_files_location,
+	sample_files_location
+):
+	larger_df = pd.DataFrame(columns = ["ID", "Task", "Sample"])
+	task_number = 1
+	for sample_number in range(1,129):
+		file_name = f"filtered_Task_{task_number:03}_Sample{sample_number:03}_irr.xlsx"
+		df = pd.DataFrame()
+		try:
+			sample_df = pd.read_excel(os.path.join(sample_files_location, file_name))
+			try:
+				df["ID"] = sample_df["ID"]
+				df["Task"] = [task_number] * len(sample_df["ID"])
+				df["Sample"] = [sample_number] * len(sample_df["ID"])
+				larger_df = pd.concat([larger_df, df], axis = 0)
+			except Exception as e:
+				print(e)
+		except:
+			print(f"Could not read {os.path.join(sample_files_location, file_name)}")
+
+	larger_df.to_excel(os.path.join(main_files_location, "larger_df.xlsx"))
+
+# # Run once, then comment out since the larger_df is created
+# create_larger_excel(
+# 	main_files_location,
+# 	sample_files_location
+# )
+
+
+def create_co_occurence_matrix(main_files_location):
+	reactions_per_sample = {}
+
+	larger_df  = pd.read_excel(os.path.join(main_files_location, "larger_df.xlsx"))
+	# Extract the first column as a list
+	all_reactions_row = list(set(larger_df.iloc[:, 1].tolist()))
+	all_reactions_column = list(set(larger_df.iloc[:, 1].tolist()))
+	print(all_reactions_row)
+
+	reactions_dict = {}
+
+	for idx, row in larger_df.iterrows():
+	    reaction = row[1]  # Assuming the first column is 'Reaction'
+	    sample_number = row[3]    # Assuming the third column is 'Sample'
+
+	    if sample_number not in reactions_dict:
+	        reactions_dict[sample_number] = []
+	    reactions_dict[sample_number].append(reaction)
+	print (reactions_dict)
+
+
+	#set_union_of_reactions = set.union_of_reactions
+	#co_occurence_matrix = pd.DataFrame(data= set_union_of_reactions, index= set_union_of_reactions)
+	co_occurence_matrix = pd.DataFrame(
+		np.zeros((len(all_reactions_column), len(all_reactions_row))),
+		index=all_reactions_row,
+		columns=all_reactions_column
+		)
+
+	for reaction_column in all_reactions_column:
+		for sample_number in reactions_dict.keys():
+			if reaction_column in reactions_dict[sample_number]:
+				for reaction_row in all_reactions_row:
+					if reaction_row in reactions_dict[sample_number]:
+						co_occurence_matrix.at[reaction_column, reaction_row] += 1
+					else:
+						co_occurence_matrix.at[reaction_column, reaction_row] += 0
+			#else:
+			#	co_occurence_matrix.at[reaction_column, reaction_row] += 0
+
+
+	print(co_occurence_matrix)
+	co_occurence_matrix.to_excel(os.path.join(main_files_location, "co_occurence_matrix.xlsx"))
+
+	co_occurence_matrix_heatmap = px.imshow(co_occurence_matrix, text_auto=True)
+	co_occurence_matrix_heatmap.show()
+
+	# create co-occurence matrix by counting how often each reaction is present in total (diagnal)
+	## then per reaciton see how often it is together with another
+
+
+
+if __name__ == "__main__":
+	load_files(
+		main_files_location,
+		expression_file,
+		model_file
+	)
+	create_larger_excel(
+		main_files_location,
+		sample_files_location)
+	
+	create_co_occurence_matrix(main_files_location)

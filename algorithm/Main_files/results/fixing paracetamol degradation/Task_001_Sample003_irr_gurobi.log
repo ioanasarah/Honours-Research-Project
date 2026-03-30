@@ -1,0 +1,86 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Oct 23 20:04:19 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\fixing paracetamol degradation\Task_001_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34510 columns and 146720 nonzeros
+Model fingerprint: 0xad4edb0c
+Variable types: 17261 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30834 rows and 21557 columns
+Presolve time: 0.32s
+Presolved: 16402 rows, 12953 columns, 54582 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+Found heuristic solution: objective 8.2550323
+
+Root relaxation: objective 9.007783e-01, 3339 iterations, 0.29 seconds (0.69 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.90078    0    2    8.25503    0.90078  89.1%     -    0s
+H    0     0                       1.7804106    0.90078  49.4%     -    0s
+H    0     0                       0.9352683    0.90078  3.69%     -    0s
+     0     0    0.90078    0    2    0.93527    0.90078  3.69%     -    0s
+
+Explored 1 nodes (3339 simplex iterations) in 0.74 seconds (1.18 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 0.935268 1.78041 8.25503 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.352683469120e-01, best bound 9.352683469120e-01, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Thu Oct 23 20:08:04 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\fixing paracetamol degradation\Task_001_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34510 columns and 146720 nonzeros
+Model fingerprint: 0xad4edb0c
+Variable types: 17261 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30834 rows and 21557 columns
+Presolve time: 0.31s
+Presolved: 16402 rows, 12953 columns, 54582 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+Found heuristic solution: objective 8.2550323
+
+Root relaxation: objective 9.007783e-01, 3339 iterations, 0.29 seconds (0.69 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.90078    0    2    8.25503    0.90078  89.1%     -    0s
+H    0     0                       1.7804106    0.90078  49.4%     -    0s
+H    0     0                       0.9352683    0.90078  3.69%     -    0s
+     0     0    0.90078    0    2    0.93527    0.90078  3.69%     -    0s
+
+Explored 1 nodes (3339 simplex iterations) in 0.73 seconds (1.18 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 0.935268 1.78041 8.25503 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.352683469120e-01, best bound 9.352683469120e-01, gap 0.0000%

@@ -1,0 +1,51 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 10:50:44 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules\Task_029_Sample002_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34813 columns and 147860 nonzeros
+Model fingerprint: 0x627d7c5b
+Variable types: 17419 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [3e-05, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31202 rows and 21853 columns
+Presolve time: 0.35s
+Presolved: 16456 rows, 12960 columns, 54687 nonzeros
+Variable types: 6413 continuous, 6547 integer (6547 binary)
+
+Root relaxation: objective 8.857608e-01, 1310 iterations, 0.09 seconds (0.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.88576    0    5          -    0.88576      -     -    0s
+H    0     0                       2.0430907    0.88576  56.6%     -    0s
+     0     0    1.76120    0    9    2.04309    1.76120  13.8%     -    0s
+     0     0    1.84239    0    8    2.04309    1.84239  9.82%     -    1s
+     0     0    1.84239    0    7    2.04309    1.84239  9.82%     -    1s
+     0     0    1.89318    0   14    2.04309    1.89318  7.34%     -    1s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  MIR: 5
+  Flow cover: 8
+  Network: 4
+
+Explored 1 nodes (3945 simplex iterations) in 1.44 seconds (1.61 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 2.04309 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.043090665334e+00, best bound 2.043090665334e+00, gap 0.0000%

@@ -1,0 +1,58 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 10:50:51 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules\Task_029_Sample004_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34813 columns and 147860 nonzeros
+Model fingerprint: 0x962a7ae3
+Variable types: 17419 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [3e-05, 1e+01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31251 rows and 21853 columns
+Presolve time: 0.34s
+Presolved: 16407 rows, 12960 columns, 54589 nonzeros
+Variable types: 6414 continuous, 6546 integer (6546 binary)
+
+Root relaxation: objective 1.925951e-01, 1385 iterations, 0.08 seconds (0.15 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.19260    0    5          -    0.19260      -     -    0s
+H    0     0                       1.1120011    0.19260  82.7%     -    0s
+     0     0    1.08425    0    9    1.11200    1.08425  2.50%     -    0s
+     0     0    1.08425    0   11    1.11200    1.08425  2.50%     -    0s
+     0     0    1.08505    0    6    1.11200    1.08505  2.42%     -    1s
+     0     0    1.08555    0    3    1.11200    1.08555  2.38%     -    1s
+     0     0    1.08555    0   10    1.11200    1.08555  2.38%     -    1s
+     0     0    1.08555    0    4    1.11200    1.08555  2.38%     -    1s
+     0     0     cutoff    0         1.11200    1.11200  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 4
+  Implied bound: 5
+  Clique: 3
+  MIR: 4
+  Flow cover: 10
+  GUB cover: 1
+  Network: 9
+  Relax-and-lift: 4
+
+Explored 1 nodes (3334 simplex iterations) in 1.56 seconds (1.46 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 1.112 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.112001056065e+00, best bound 1.112001056065e+00, gap 0.0000%

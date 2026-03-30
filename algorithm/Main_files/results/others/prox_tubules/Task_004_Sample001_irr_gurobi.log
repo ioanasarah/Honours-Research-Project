@@ -1,0 +1,66 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 10:48:41 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules\Task_004_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34811 columns and 147858 nonzeros
+Model fingerprint: 0x30bdc4d2
+Variable types: 17417 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 1e+01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31252 rows and 21852 columns
+Presolve time: 0.32s
+Presolved: 16406 rows, 12959 columns, 54592 nonzeros
+Variable types: 6413 continuous, 6546 integer (6546 binary)
+
+Root relaxation: objective 1.176050e-02, 2868 iterations, 0.16 seconds (0.27 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01176    0   29          -    0.01176      -     -    0s
+H    0     0                       8.9385095    0.01176   100%     -    0s
+H    0     0                       8.9385095    0.01176   100%     -    0s
+     0     0    5.00778    0   44    8.93851    5.00778  44.0%     -    0s
+     0     0    5.01408    0   45    8.93851    5.01408  43.9%     -    1s
+     0     0    5.01498    0   46    8.93851    5.01498  43.9%     -    1s
+     0     0    5.67297    0   27    8.93851    5.67297  36.5%     -    1s
+     0     0    5.67297    0   27    8.93851    5.67297  36.5%     -    1s
+     0     0    6.97513    0   29    8.93851    6.97513  22.0%     -    1s
+     0     0    6.97684    0   62    8.93851    6.97684  21.9%     -    1s
+     0     0    6.97684    0   62    8.93851    6.97684  21.9%     -    1s
+H    0     0                       8.9144201    6.97684  21.7%     -    1s
+     0     0    6.97684    0   61    8.91442    6.97684  21.7%     -    1s
+     0     0    7.03273    0   32    8.91442    7.03273  21.1%     -    1s
+     0     0    7.26283    0   28    8.91442    7.26283  18.5%     -    1s
+     0     2    7.26283    0   29    8.91442    7.26283  18.5%     -    2s
+H   88    17                       8.9144201    8.87667  0.42%  15.6    2s
+
+Cutting planes:
+  Cover: 11
+  Implied bound: 2
+  Clique: 1
+  MIR: 26
+  StrongCG: 2
+  Flow cover: 69
+  Flow path: 11
+  Network: 23
+
+Explored 150 nodes (7904 simplex iterations) in 2.87 seconds (2.82 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 5: 8.91442 8.91442 8.91442 ... 8.93851
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.3287e-06) exceeds tolerance
+Best objective 8.914420131268e+00, best bound 8.914420131268e+00, gap 0.0000%

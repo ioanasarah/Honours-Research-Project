@@ -1,0 +1,52 @@
+
+Gurobi 12.0.2 (win64) logging started Wed Nov 19 16:47:35 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\paracetamol_respiration_improved\Task_002_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34509 columns and 146719 nonzeros
+Model fingerprint: 0xb2e6e8d9
+Variable types: 17260 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30829 rows and 21545 columns
+Presolve time: 0.70s
+Presolved: 16407 rows, 12964 columns, 54603 nonzeros
+Variable types: 6418 continuous, 6546 integer (6546 binary)
+
+Root relaxation: objective 6.860365e-05, 1584 iterations, 0.10 seconds (0.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00007    0    9          -    0.00007      -     -    0s
+H    0     0                       0.1347168    0.00007   100%     -    0s
+     0     0    0.04225    0   14    0.13472    0.04225  68.6%     -    1s
+     0     0    0.04225    0    9    0.13472    0.04225  68.6%     -    1s
+     0     0    0.13472    0   11    0.13472    0.13472  0.00%     -    1s
+
+Cutting planes:
+  Learned: 1
+  Cover: 2
+  Implied bound: 1
+  MIR: 2
+  Flow cover: 3
+  Flow path: 9
+  Network: 4
+
+Explored 1 nodes (2817 simplex iterations) in 1.60 seconds (1.05 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 0.134717 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.347167933690e-01, best bound 1.347167933690e-01, gap 0.0000%

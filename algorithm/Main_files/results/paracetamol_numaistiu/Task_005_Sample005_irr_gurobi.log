@@ -1,0 +1,56 @@
+
+Gurobi 12.0.2 (win64) logging started Mon Nov 10 21:26:08 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\paracetamol_numaistiu\Task_005_Sample005_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34507 columns and 146717 nonzeros
+Model fingerprint: 0xa8dd2f40
+Variable types: 17258 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30835 rows and 21553 columns
+Presolve time: 0.32s
+Presolved: 16401 rows, 12954 columns, 54587 nonzeros
+Variable types: 6410 continuous, 6544 integer (6544 binary)
+
+Root relaxation: objective 8.772226e-01, 4380 iterations, 0.35 seconds (0.83 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.87722    0    5          -    0.87722      -     -    0s
+H    0     0                       0.9333099    0.87722  6.01%     -    0s
+H    0     0                       0.9049716    0.87722  3.07%     -    0s
+     0     0    0.88925    0    7    0.90497    0.88925  1.74%     -    0s
+     0     0    0.88925    0    4    0.90497    0.88925  1.74%     -    1s
+     0     0    0.90103    0    9    0.90497    0.90103  0.44%     -    1s
+     0     0    0.90125    0    5    0.90497    0.90125  0.41%     -    1s
+     0     0     cutoff    0         0.90497    0.90497  0.00%     -    1s
+
+Cutting planes:
+  Cover: 1
+  Implied bound: 6
+  Clique: 1
+  MIR: 5
+  Flow cover: 7
+  Flow path: 2
+  Network: 1
+  Relax-and-lift: 2
+
+Explored 1 nodes (5623 simplex iterations) in 1.13 seconds (1.56 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.904972 0.93331 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.049715880267e-01, best bound 9.049715880267e-01, gap 0.0000%

@@ -1,0 +1,106 @@
+
+Gurobi 12.0.2 (win64) logging started Tue Jun 10 18:59:40 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\glucogenesis tasks\Task_002_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34497 columns and 146684 nonzeros
+Model fingerprint: 0x51f14dd3
+Variable types: 17252 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30826 rows and 21544 columns
+Presolve time: 0.30s
+Presolved: 16400 rows, 12953 columns, 54573 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+
+Root relaxation: objective 3.253583e-05, 60 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00003    0    2          -    0.00003      -     -    0s
+H    0     0                       0.0325358    0.00003   100%     -    0s
+     0     0    0.00003    0    2    0.03254    0.00003   100%     -    0s
+
+Explored 1 nodes (60 simplex iterations) in 0.44 seconds (0.47 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 0.0325358 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.253583076199e-02, best bound 3.253583076199e-02, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Tue Jun 10 19:57:33 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\glucogenesis tasks\Task_002_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34501 columns and 146688 nonzeros
+Model fingerprint: 0xe8a6293c
+Variable types: 17256 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30781 rows and 21548 columns
+Presolve time: 0.31s
+Presolved: 16445 rows, 12953 columns, 54662 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+
+Root relaxation: objective 4.063627e-03, 2559 iterations, 0.18 seconds (0.31 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00406    0   12          -    0.00406      -     -    0s
+H    0     0                       3.8101106    0.00406   100%     -    0s
+     0     0    0.88213    0   36    3.81011    0.88213  76.8%     -    1s
+     0     0    0.88253    0   37    3.81011    0.88253  76.8%     -    1s
+     0     0    0.88370    0   26    3.81011    0.88370  76.8%     -    1s
+     0     0    0.88370    0   27    3.81011    0.88370  76.8%     -    1s
+     0     0    0.88647    0   75    3.81011    0.88647  76.7%     -    2s
+     0     0    0.88647    0   77    3.81011    0.88647  76.7%     -    2s
+     0     0    0.92775    0   72    3.81011    0.92775  75.7%     -    2s
+     0     0    1.75766    0   86    3.81011    1.75766  53.9%     -    2s
+     0     0    1.75830    0   86    3.81011    1.75830  53.9%     -    2s
+     0     2    1.75830    0   86    3.81011    1.75830  53.9%     -    3s
+H   80    51                       3.8101104    1.75830  53.9%  60.7    4s
+   198    92    1.75830   14   75    3.81011    1.75830  53.9%  78.6    7s
+   459   120    2.40600   26   41    3.81011    2.11574  44.5%   110   10s
+H  623   121                       3.8101104    2.16960  43.1%   117   11s
+
+Cutting planes:
+  Learned: 6
+  Cover: 16
+  Implied bound: 58
+  MIR: 27
+  Flow cover: 125
+  Flow path: 10
+  Inf proof: 3
+  Network: 24
+  Relax-and-lift: 3
+
+Explored 1138 nodes (137525 simplex iterations) in 14.63 seconds (18.26 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 3.81011 3.81011 3.81011 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.810110384944e+00, best bound 3.810110384944e+00, gap 0.0000%

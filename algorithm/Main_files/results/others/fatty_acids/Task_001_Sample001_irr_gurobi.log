@@ -1,0 +1,126 @@
+
+Gurobi 12.0.2 (win64) logging started Wed Jun  4 16:52:40 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\fatty_acids\Task_001_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34495 columns and 146682 nonzeros
+Model fingerprint: 0x5ce8579f
+Variable types: 17250 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30782 rows and 21542 columns
+Presolve time: 0.49s
+Presolved: 16444 rows, 12953 columns, 54659 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+Found heuristic solution: objective 18.2493603
+
+Root relaxation: objective 1.824572e-03, 61 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00182    0    4   18.24936    0.00182   100%     -    0s
+H    0     0                       0.0712388    0.00182  97.4%     -    0s
+     0     0    0.00182    0    4    0.07124    0.00182  97.4%     -    0s
+
+Explored 1 nodes (61 simplex iterations) in 0.67 seconds (0.47 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.0712388 18.2494 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.123877588419e-02, best bound 7.123877588419e-02, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Wed Jun  4 16:55:57 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\fatty_acids\Task_001_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34495 columns and 146682 nonzeros
+Model fingerprint: 0x5ce8579f
+Variable types: 17250 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30782 rows and 21542 columns
+Presolve time: 0.51s
+Presolved: 16444 rows, 12953 columns, 54659 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+Found heuristic solution: objective 18.2493603
+
+Root relaxation: objective 1.824572e-03, 61 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00182    0    4   18.24936    0.00182   100%     -    0s
+H    0     0                       0.0712388    0.00182  97.4%     -    0s
+     0     0    0.00182    0    4    0.07124    0.00182  97.4%     -    0s
+
+Explored 1 nodes (61 simplex iterations) in 0.73 seconds (0.47 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.0712388 18.2494 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.123877588419e-02, best bound 7.123877588419e-02, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 15:33:05 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\fatty_acids\Task_001_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34495 columns and 146682 nonzeros
+Model fingerprint: 0x5ce8579f
+Variable types: 17250 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30782 rows and 21542 columns
+Presolve time: 0.53s
+Presolved: 16444 rows, 12953 columns, 54659 nonzeros
+Variable types: 6410 continuous, 6543 integer (6543 binary)
+Found heuristic solution: objective 18.2493603
+
+Root relaxation: objective 1.824572e-03, 61 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00182    0    4   18.24936    0.00182   100%     -    0s
+H    0     0                       0.0712388    0.00182  97.4%     -    0s
+     0     0    0.00182    0    4    0.07124    0.00182  97.4%     -    0s
+
+Explored 1 nodes (61 simplex iterations) in 0.71 seconds (0.47 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.0712388 18.2494 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.123877588419e-02, best bound 7.123877588419e-02, gap 0.0000%

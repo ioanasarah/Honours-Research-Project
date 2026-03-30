@@ -1,0 +1,43 @@
+
+Gurobi 12.0.2 (win64) logging started Tue Jun 10 14:59:35 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\removing_sulfation\Task_003_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34520 columns and 146730 nonzeros
+Model fingerprint: 0x63d0aac2
+Variable types: 17271 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [4e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 1.9422613
+Presolve removed 32905 rows and 23058 columns
+Presolve time: 0.34s
+Presolved: 14331 rows, 11462 columns, 46660 nonzeros
+Variable types: 5686 continuous, 5776 integer (5776 binary)
+
+Root relaxation: objective 3.572120e-02, 2641 iterations, 0.19 seconds (0.39 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03572    0    2    1.94226    0.03572  98.2%     -    0s
+H    0     0                       0.9169759    0.03572  96.1%     -    0s
+H    0     0                       0.1812744    0.03572  80.3%     -    0s
+     0     0    0.03572    0    2    0.18127    0.03572  80.3%     -    0s
+
+Explored 1 nodes (2641 simplex iterations) in 0.57 seconds (0.80 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 0.181274 0.916976 1.94226 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.812743884006e-01, best bound 1.812743884006e-01, gap 0.0000%

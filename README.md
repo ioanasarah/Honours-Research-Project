@@ -14,4 +14,12 @@
 - [`tasklist_paracetamol_specific/`](./tasklist_paracetamol_specific)  
   Task definitions for paracetamol degradation and toxicity pathways, but also metabolic reactions which are known to be affected at toxic doses of the drug.
 
+## Explanation of code
+- [`adding_cobra_reactions.py`](./code/adding_cobra_reactions.py)  
+Extends the Human1 GEM by modifying existing reactions and adding new ones to ensure the biologically accurate mapping of acetaminophen toxicity and glutathione metabolism. The code loads an existing .mat model using COBRApy, modifies it, and saves it.   
 
+- [`comparing_expression_values.py`](./code/comparing_expression_values.py)  
+Combines expression values for a specific reaction across multiple samples and tasks for comparative analysis. Allows for the observation of changes in gene expression of one reaction in different conditions/samples.  
+
+- [`creating_csv_for_escher.py`](./code/creating_csv_for_escher.py)  
+Converts excel based expression data into a simplified .CSV format compatible with Escher for mapping of pathways. 

@@ -1,0 +1,56 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 10:48:30 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules\Task_003_Sample002_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34799 columns and 147846 nonzeros
+Model fingerprint: 0xf27e86cc
+Variable types: 17405 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [3e-05, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31245 rows and 21838 columns
+Presolve time: 0.35s
+Presolved: 16413 rows, 12961 columns, 54609 nonzeros
+Variable types: 6412 continuous, 6549 integer (6549 binary)
+
+Root relaxation: objective 2.961775e-03, 1667 iterations, 0.11 seconds (0.17 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00296    0   11          -    0.00296      -     -    0s
+H    0     0                       2.0722974    0.00296   100%     -    0s
+     0     0    1.00263    0   12    2.07230    1.00263  51.6%     -    0s
+     0     0    1.01467    0   11    2.07230    1.01467  51.0%     -    0s
+     0     0    1.01586    0   13    2.07230    1.01586  51.0%     -    0s
+     0     0    1.20260    0   17    2.07230    1.20260  42.0%     -    1s
+     0     0    2.04214    0    4    2.07230    2.04214  1.46%     -    1s
+     0     0    2.04298    0    3    2.07230    2.04298  1.41%     -    1s
+     0     0    2.07022    0    3    2.07230    2.07022  0.10%     -    1s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 4
+  MIR: 4
+  Flow cover: 5
+  Flow path: 2
+  Network: 1
+  Relax-and-lift: 3
+
+Explored 1 nodes (2939 simplex iterations) in 1.17 seconds (1.21 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 2.0723 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.072297441995e+00, best bound 2.072297441995e+00, gap 0.0000%

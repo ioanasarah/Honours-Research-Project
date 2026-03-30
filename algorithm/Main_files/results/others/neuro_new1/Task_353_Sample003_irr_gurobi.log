@@ -1,0 +1,104 @@
+
+Gurobi 12.0.2 (win64) logging started Thu Jun  5 16:20:36 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\neuro_new1\Task_353_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34492 columns and 146679 nonzeros
+Model fingerprint: 0xd570ed63
+Variable types: 17247 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.3734407
+Presolve removed 43409 rows and 31283 columns
+Presolve time: 0.57s
+Presolved: 3817 rows, 3209 columns, 12127 nonzeros
+Variable types: 1598 continuous, 1611 integer (1611 binary)
+
+Root relaxation: objective 1.125158e-03, 240 iterations, 0.00 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00113    0    6    0.37344    0.00113   100%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0 infeasible    0         0.37344    0.37344  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+
+Explored 1 nodes (251 simplex iterations) in 0.76 seconds (0.40 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 0.373441 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.734406804717e-01, best bound 3.734406804717e-01, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Fri Jun  6 16:50:25 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\neuro_new1\Task_353_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47226 rows, 34492 columns and 146679 nonzeros
+Model fingerprint: 0xd570ed63
+Variable types: 17247 continuous, 17245 integer (17245 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.3734407
+Presolve removed 43409 rows and 31283 columns
+Presolve time: 0.30s
+Presolved: 3817 rows, 3209 columns, 12127 nonzeros
+Variable types: 1598 continuous, 1611 integer (1611 binary)
+
+Root relaxation: objective 1.125158e-03, 240 iterations, 0.00 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00113    0    6    0.37344    0.00113   100%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0    0.37038    0    2    0.37344    0.37038  0.82%     -    0s
+     0     0 infeasible    0         0.37344    0.37344  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+
+Explored 1 nodes (251 simplex iterations) in 0.39 seconds (0.40 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 1: 0.373441 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.734406804717e-01, best bound 3.734406804717e-01, gap 0.0000%

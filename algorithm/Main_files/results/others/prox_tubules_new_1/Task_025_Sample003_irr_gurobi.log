@@ -1,0 +1,49 @@
+
+Gurobi 12.0.2 (win64) logging started Fri Jun  6 10:10:47 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\others\prox_tubules_new\Task_025_Sample003_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47658 rows, 34805 columns and 147852 nonzeros
+Model fingerprint: 0x57977dea
+Variable types: 17411 continuous, 17394 integer (17394 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [2e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 31249 rows and 21846 columns
+Presolve time: 0.30s
+Presolved: 16409 rows, 12959 columns, 54593 nonzeros
+Variable types: 6413 continuous, 6546 integer (6546 binary)
+Found heuristic solution: objective 17.0165597
+
+Root relaxation: objective 3.155344e-03, 154 iterations, 0.00 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00316    0    8   17.01656    0.00316   100%     -    0s
+H    0     0                       1.4020099    0.00316   100%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 2
+  Cover: 4
+  Flow cover: 4
+  Flow path: 5
+  Relax-and-lift: 3
+
+Explored 1 nodes (154 simplex iterations) in 0.55 seconds (0.60 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 1.40201 17.0166 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.402009914054e+00, best bound 1.402009914054e+00, gap 0.0000%

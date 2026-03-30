@@ -1,0 +1,55 @@
+
+Gurobi 12.0.2 (win64) logging started Tue Nov 25 16:46:38 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\paracetamol_respiration_improved\Task_001_Sample007_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34506 columns and 146716 nonzeros
+Model fingerprint: 0xfd74b897
+Variable types: 17257 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30790 rows and 21548 columns
+Presolve time: 0.34s
+Presolved: 16446 rows, 12958 columns, 54673 nonzeros
+Variable types: 6415 continuous, 6543 integer (6543 binary)
+
+Root relaxation: objective 3.281471e-02, 1902 iterations, 0.11 seconds (0.21 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03281    0   42          -    0.03281      -     -    0s
+H    0     0                       2.5382681    0.03281  98.7%     -    0s
+     0     0    0.89097    0   58    2.53827    0.89097  64.9%     -    0s
+     0     0    1.81106    0   66    2.53827    1.81106  28.6%     -    1s
+     0     0    1.94204    0   65    2.53827    1.94204  23.5%     -    1s
+     0     0    2.05728    0   92    2.53827    2.05728  18.9%     -    1s
+     0     0    2.05836    0   78    2.53827    2.05836  18.9%     -    1s
+     0     0    2.05836    0   88    2.53827    2.05836  18.9%     -    1s
+     0     0    2.05836    0   88    2.53827    2.05836  18.9%     -    1s
+H    0     0                       2.5225520    2.05836  18.4%     -    1s
+     0     0    2.06038    0   90    2.52255    2.06038  18.3%     -    1s
+     0     0    2.07365    0   78    2.52255    2.07365  17.8%     -    1s
+     0     0    2.07373    0   83    2.52255    2.07373  17.8%     -    1s
+     0     2    2.07373    0   83    2.52255    2.07373  17.8%     -    2s
+   243   141     cutoff   23         2.52255    2.19894  12.8%   121    5s
+  1648   685    2.44937   39   20    2.52255    2.26243  10.3%  55.4   10s
+  3450  1406    2.32621   31   83    2.52255    2.27742  9.72%  43.1   15s
+
+Explored 3463 nodes (162889 simplex iterations) in 17.68 seconds (19.96 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 3: 2.52255 2.52255 2.53827 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.522551958936e+00, best bound 2.522551958690e+00, gap 0.0000%

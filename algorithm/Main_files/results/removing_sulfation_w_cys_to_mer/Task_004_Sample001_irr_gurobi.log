@@ -1,0 +1,45 @@
+
+Gurobi 12.0.2 (win64) logging started Tue Jun 10 15:51:21 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\removing_sulfation_w_cys_to_mer\Task_004_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47234 rows, 34515 columns and 146719 nonzeros
+Model fingerprint: 0xae3f8846
+Variable types: 17267 continuous, 17248 integer (17248 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [4e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30810 rows and 21538 columns
+Presolve time: 0.37s
+Presolved: 16424 rows, 12977 columns, 54738 nonzeros
+Variable types: 6424 continuous, 6553 integer (6553 binary)
+
+Root relaxation: objective 1.781777e+00, 3097 iterations, 0.28 seconds (0.65 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.78178    0    2          -    1.78178      -     -    0s
+H    0     0                       2.6960996    1.78178  33.9%     -    0s
+H    0     0                       1.9273301    1.78178  7.55%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Flow cover: 1
+
+Explored 1 nodes (3097 simplex iterations) in 0.88 seconds (1.26 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 1.92733 2.6961 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.927330072358e+00, best bound 1.927330072358e+00, gap 0.0000%

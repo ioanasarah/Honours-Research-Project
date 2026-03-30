@@ -1,0 +1,80 @@
+
+Gurobi 12.0.2 (win64) logging started Mon Nov  3 21:51:50 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\starting with cytosolic APAP\Task_004_Sample004_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34513 columns and 146723 nonzeros
+Model fingerprint: 0x9e14c6ee
+Variable types: 17264 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30770 rows and 21540 columns
+Presolve time: 0.32s
+Presolved: 16466 rows, 12973 columns, 54957 nonzeros
+Variable types: 6424 continuous, 6549 integer (6549 binary)
+Found heuristic solution: objective 8.2548175
+
+Root relaxation: objective 7.350834e-03, 6 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0073508    0.00735  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.44 seconds (0.46 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.00735083 8.25482 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.350834087985e-03, best bound 7.350834087985e-03, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Mon Nov  3 21:53:07 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\starting with cytosolic APAP\Task_004_Sample004_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34513 columns and 146723 nonzeros
+Model fingerprint: 0xc177e464
+Variable types: 17264 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 1e+01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30770 rows and 21540 columns
+Presolve time: 0.34s
+Presolved: 16466 rows, 12973 columns, 54957 nonzeros
+Variable types: 6424 continuous, 6549 integer (6549 binary)
+Found heuristic solution: objective 90.3600806
+
+Root relaxation: objective 7.350834e-03, 6 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0073508    0.00735  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.46 seconds (0.46 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.00735083 90.3601 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.350834087985e-03, best bound 7.350834087985e-03, gap 0.0000%
