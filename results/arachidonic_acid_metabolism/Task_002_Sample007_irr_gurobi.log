@@ -1,0 +1,42 @@
+
+Gurobi 12.0.2 (win64) logging started Wed Dec 10 17:37:23 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\arachidonic_acid_metabolism\Task_002_Sample007_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34502 columns and 146712 nonzeros
+Model fingerprint: 0x1c48b08c
+Variable types: 17253 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 30787 rows and 21548 columns
+Presolve time: 0.31s
+Presolved: 16449 rows, 12954 columns, 54680 nonzeros
+Variable types: 6409 continuous, 6545 integer (6545 binary)
+
+Root relaxation: objective 1.230922e-02, 2752 iterations, 0.18 seconds (0.32 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01231    0    4          -    0.01231      -     -    0s
+H    0     0                       5.3831099    0.01231   100%     -    0s
+H    0     0                       0.1023771    0.01231  88.0%     -    0s
+     0     0    0.08078    0    6    0.10238    0.08078  21.1%     -    0s
+
+Explored 1 nodes (3103 simplex iterations) in 0.99 seconds (1.06 work units)
+Thread count was 18 (of 18 available processors)
+
+Solution count 2: 0.102377 5.38311 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.023770690258e-01, best bound 1.023770690258e-01, gap 0.0000%

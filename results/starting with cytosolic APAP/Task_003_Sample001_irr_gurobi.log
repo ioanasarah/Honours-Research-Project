@@ -1,0 +1,64 @@
+
+Gurobi 12.0.2 (win64) logging started Mon Nov  3 21:38:39 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\starting with cytosolic APAP\Task_003_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34503 columns and 146713 nonzeros
+Model fingerprint: 0xa9a36996
+Variable types: 17254 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 9e-01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0072488
+Presolve removed 47236 rows and 34503 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.24 work units)
+Thread count was 1 (of 18 available processors)
+
+Solution count 1: 0.00724876 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.248764957656e-03, best bound 7.248764957656e-03, gap 0.0000%
+
+Gurobi 12.0.2 (win64) logging started Mon Nov  3 21:53:59 2025
+
+Set parameter LogFile to value "C:\Ioana\_uni\honours\slp\algorithm\Main_files\results\starting with cytosolic APAP\Task_003_Sample001_irr_gurobi.log"
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: Intel(R) Core(TM) Ultra 5 125H, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 18 logical processors, using up to 18 threads
+
+Non-default parameters:
+TimeLimit  2200
+
+Optimize a model with 47236 rows, 34503 columns and 146713 nonzeros
+Model fingerprint: 0x9f7be9f3
+Variable types: 17254 continuous, 17249 integer (17249 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 8e+04]
+  Objective range  [1e-04, 1e+01]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0072488
+Presolve removed 47236 rows and 34503 columns
+Presolve time: 0.18s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.19 seconds (0.24 work units)
+Thread count was 1 (of 18 available processors)
+
+Solution count 1: 0.00724876 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.248764957656e-03, best bound 7.248764957656e-03, gap 0.0000%
